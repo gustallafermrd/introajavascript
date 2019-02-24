@@ -1,0 +1,86 @@
+
+html{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background: #CC2A49;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.main{
+	width: 50%;
+	height: 50vh;
+	background: #582841;
+	margin: 0 auto;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.20);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+button{
+	font-family: 'helvetica neue';
+	font-size: 20px;
+	color: #fff;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid transparent;
+	text-transform: uppercase;
+	cursor: pointer;
+
+}
+
+.medio{
+	width: 100%;
+	background: #fff;
+}
+
+.color1{
+	background: #F99E4C;
+	transition: background-color 1s;
+}
+
+.color1:hover{
+	box-shadow: 1px 1px 10px rgba(249,158,76,.70);
+	animation: escalar 1s forwards;
+}
+
+.color2{
+	background: #F36F38;
+	transition: 1s;
+}
+
+.color2:hover{
+	box-shadow: 1px 1px 10px rgba(243,111,56,.70);
+	animation: escalar 1s forwards;
+}
+
+.color3{
+	background: #EF4648;
+	transition: 1s;
+}
+
+.color3:hover{
+	box-shadow: 1px 1px 10px rgba(239,70,72,.70);
+	animation: escalar 1s forwards;
+}
+
+@keyframes escalar{
+	0%{transform: scale(1);}
+	100%{transform: scale(1.2);opacity: 1;}
+}
