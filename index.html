@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 0.8em 1em;
+      }
+      img {
+        display: block;
+        min-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="" src="https://picsum.photos/600/150" />
+      <img class="" src="https://picsum.photos/600/300" />
+      <img class="" src="https://picsum.photos/600/800" />
+      <img class="" src="https://picsum.photos/600/600" />
+    </div>
+  </body>
+  <script>
+    (function altura() {
+      var imgs = document.querySelectorAll("img");
+      console.log(imgs);
+      for (let i = 0; i < imgs.length; i++) {
+        console.log(imgs[i].height);
+        if (imgs[i].height < imgs[i].width) {
+          imgs[i].classList.add("horizontal");
+        } else if (imgs[i].height > imgs[i].width) {
+          imgs[i].classList.add("vertical");
+        } else {
+          imgs[i].classList.add("cuadrada");
+        }
+      }
+    })();
+  </script>
+</html>
